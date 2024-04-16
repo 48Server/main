@@ -1,0 +1,52 @@
+body {
+    /* Membuat gradasi warna untuk latar belakang halaman */
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to top, #03162a, #000000);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+canvas {
+    /* Membuat gradasi warna untuk latar belakang canvas */
+    background: linear-gradient(to top, #03162a, #000000);
+    display: block; /* Menghilangkan margin bawaan */
+}
+
+/* Tambahkan ini ke bagian bawah file html.css Anda */
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Menambahkan ini untuk memastikan semua konten terpusat */
+}
+
+.container {
+    position: absolute; /* Membuat container tombol tidak mempengaruhi layout canvas */
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10; /* Pastikan tombol muncul di atas canvas */
+}
+
+.button {
+    display: inline-block;
+    margin: 5px;
+    padding: 7px 200px;
+    border: 2.5px solid #FFF; /* Border putih */
+    color: #FFF; /* Warna teks putih */
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: transparent; /* Membuat latar belakang transparan */
+    border-radius: 10px; /* Menambahkan lengkungan pada tombol */
+    width: 200px; /* Menetapkan lebar tetap untuk tombol */
+}
+
+.button:hover {
+    background-color: #FFF; /* Warna latar saat hover */
+    color: #000; /* Warna teks saat hover */
+}
