@@ -14,7 +14,7 @@ canvas {
 }
 
 /* Tambahkan ini ke bagian bawah file html.css Anda */
-body, html {
+body, index {
     height: 100%;
     display: flex;
     justify-content: center;
